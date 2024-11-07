@@ -52,6 +52,7 @@ RVTEST_SIGBASE( x13,signature_x13_1)
 		sd	a4,0(a5)	// Load data from it (CHECK FOR READ) ; (NOT TRAP => W enabled)
 		nop
 		nop
+		fence.i
  	  	lb	a4,0(a5)	// Load data from it (CHECK FOR READ) ; (NOT TRAP => W enabled)
     	nop
     	nop
